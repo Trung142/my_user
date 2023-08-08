@@ -1,0 +1,215 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+
+
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+
+    i {
+      cursor: pointer;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    .tile {
+      display: flex;
+      justify-content: space-between;
+
+      a {
+        font-weight: 600px;
+        font-size: 12px;
+        color: rgba(22, 24, 35, 0.75);
+        cursor: pointer;
+        display: inherit;
+        font-family: TikTokFont, Arial, Tahoma, PingFangSC, sans-serif;
+      }
+
+      h5 {
+        font-size: 16px;
+      }
+
+    }
+
+    input {
+      width: 100%;
+      background-color: rgba(22, 24, 35, 0.06);
+      border: 1px solid rgba(22, 24, 35, 0.12);
+      color: rgb(22, 24, 35);
+      border-radius: 2px;
+      outline: none;
+      height: 44px;
+    }
+
+    .input-1 {
+      margin-bottom: 10px;
+    }
+
+    .input-2 {
+      margin-bottom: 15px;
+      position: relative;
+
+      i {
+        position: absolute;
+        right: 10px;
+        top: 15px;
+      }
+    }
+
+    .title {
+      font-size: 12px;
+      font-weight: 600;
+      color: rgba(22, 24, 35, 0.75);
+      cursor: pointer;
+      font-family: TikTokFont, Arial, Tahoma, PingFangSC, sans-serif;
+      margin-bottom: 10px;
+    }
+
+    button {
+      background-color: rgba(22, 24, 35, 0.06);
+      border: 1px solid rgba(22, 24, 35, 0.12);
+      color: rgb(22, 24, 35);
+      outline: none;
+      border-radius: 5px;
+      height: 44px;
+      font-weight: bold;
+      margin-bottom: 10px;
+
+      &.active {
+        color: rgb(255, 255, 255);
+        background-color: rgb(254, 44, 85);
+      }
+
+    }
+
+    button:disabled,
+    button[disabled=disabled] {
+      cursor: not-allowed;
+    }
+
+
+
+    .goback {
+      text-align: center;
+      font-weight: bold;
+      color: rgba(22, 24, 35, 0.75);
+      cursor: pointer;
+    }
+
+    .signup {
+      margin-top: 10px;
+      text-align: center;
+
+      .link {
+        font-weight: bold;
+        color: rgb(254, 44, 85);
+      }
+    }
+  }
+
+  @media (min-width:768px) {
+    .rounded {
+      height: 400px;
+      width: 800px;
+    }
+  }
+
+  .signup-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+
+    .tite {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    input {
+      width: 100%;
+      margin-top: 10px;
+      background-color: rgba(22, 24, 35, 0.06);
+      border: 1px solid rgba(22, 24, 35, 0.12);
+      color: rgb(22, 24, 35);
+      border-radius: 2px;
+      outline: none;
+      height: 44px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    a {
+      font-weight: 600px;
+      font-size: 12px;
+      color: rgba(22, 24, 35, 0.75);
+      cursor: pointer;
+      display: inherit;
+      font-family: TikTokFont, Arial, Tahoma, PingFangSC, sans-serif;
+    }
+
+
+    button {
+      background-color: rgba(22, 24, 35, 0.06);
+      border: 1px solid rgba(22, 24, 35, 0.12);
+      color: rgb(22, 24, 35);
+      outline: none;
+      border-radius: 5px;
+      height: 44px;
+      font-weight: bold;
+      margin: 10px 0px;
+
+      &.active {
+        background-color: rgb(254, 44, 85);
+        color: rgb(255, 255, 255);
+      }
+
+    }
+
+    .go-back {
+      text-align: center;
+      margin-bottom: 10px;
+      color: rgba(22, 24, 35, 0.75);
+      cursor: pointer;
+    }
+
+    .input1 {
+      margin-bottom: 10px;
+      position: relative;
+
+      i {
+        position: absolute;
+        top: 25px;
+        right: 10px;
+        cursor: pointer;
+      }
+    }
+
+    .signup {
+      margin-top: 10px;
+      text-align: center;
+
+      .link {
+        font-weight: bold;
+        color: rgb(254, 44, 85);
+      }
+    }
+  }
+}
